@@ -3,49 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com
 
 @-webkit-keyframes hover-dos{
-0%{-webkit-transform: translate(0px);}
-25%{-webkit-transform: translate(0px, -8px);}
-50%{-webkit-transform: translate(0px, 0px);}
-75%{-webkit-transform: translate(0px, 8px);}
-100%{-webkit-transform: translate(0px);}
+	0%{-webkit-transform: translate(0px);}
+	25%{-webkit-transform: translate(0px, -8px);}
+	50%{-webkit-transform: translate(0px, 0px);}
+	75%{-webkit-transform: translate(0px, 8px);}
+	100%{-webkit-transform: translate(0px);}
 }
 
 @-moz-keyframes hover-dos{
-0%{-moz-transform: translate(0px);}
-25%{-moz-transform: translate(0px, -8px);}
-50%{-moz-transform: translate(0px, 0px);}
-75%{-moz-transform: translate(0px, 8px);}
-100%{-moz-transform: translate(0px);}
+	0%{-moz-transform: translate(0px);}
+	25%{-moz-transform: translate(0px, -8px);}
+	50%{-moz-transform: translate(0px, 0px);}
+	75%{-moz-transform: translate(0px, 8px);}
+	100%{-moz-transform: translate(0px);}
 }
 
 @-o-keyframes hover-dos{
-0%{-o-transform: translate(0px);}
-25%{-o-transform: translate(0px, -8px);}
-50%{-o-transform: translate(0px, 0px);}
-75%{-o-transform: translate(0px, 8px);}
-100%{-o-transform: translate(0px);}
+	0%{-o-transform: translate(0px);}
+	25%{-o-transform: translate(0px, -8px);}
+	50%{-o-transform: translate(0px, 0px);}
+	75%{-o-transform: translate(0px, 8px);}
+	100%{-o-transform: translate(0px);}
 }
 
 @-webkit-keyframes hover{
-	  0% {
-	      left: 0
-	     }
-
-	  25%{ 
-	  	left: -200px
-	    }
-
-	  50%{
-	  	left: -300px
-	  }
-
-	  75%{
-	  	left: -200px
-	  }
-
-	  100%{
-	  	left: 0
-	  }
+	0% {left: 0}
+	25%{left: -200px}
+	50%{left: -300px}
+	75%{left: -200px}
+	100%{left: 0}
 }
 
 @-moz-keyframes hover{
@@ -261,19 +247,18 @@
 
 
 		a{
-			padding-top: 30px;
-			padding-bottom:30px;
+			padding-top: 15px;
+			padding-bottom:15px;
+			margin-top: 7.5px;
+			margin-bottom: 7.5px;
 			font-family: 'Open Sans', sans-serif;
-  		font-size: 13px;
+			font-size: 13px;
 			color: #fff;
-		  text-shadow: none;
-		  -webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+			text-shadow: none;
+			-webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+			-moz-transition: 0.5s;
 			-o-transition: 0.5s;
-	    transition: 0.5s;
-		}
-
-		a:hover{
-			font-size: 16px;
+			transition: 0.5s;
 		}
 
 	}
