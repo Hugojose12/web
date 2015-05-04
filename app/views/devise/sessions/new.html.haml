@@ -1,0 +1,22 @@
+.container-session
+	%center
+		.col-lg-12
+			.authform
+				= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f|
+					= devise_error_messages!
+					.form-group
+						- if devise_mapping.registerable?
+							= #link_to 'Sign up', new_registration_path(resource_name), class: 'right'
+						%label= t("devise.Email")
+						.input-group{ style: "margin-bottom:15px;" }
+							%span.input-group-addon
+								%i.fa.fa-user
+							= f.email_field :email, :autofocus => true, class: 'form-control transparent', placeholder: "Tu email", id:"form-user"
+						%label= t("devise.password")
+						.input-group
+							%span.input-group-addon
+								%i.fa.fa-key
+							= f.password_field :password, class: 'form-control transparent', placeholder: "Tu contraseña", id:"form-pass"
+					.form-actions
+						= f.submit "Entrar", :class => 'btn btn-lg btn-warning'
+

@@ -1,0 +1,147 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+
+/* Large desktops and laptops */
+
+	textarea.form-control {
+  height: 162px;
+}
+
+.form-control{
+	margin-top:10px;
+}
+
+.btn{
+	width: 100%;
+	background: #319ac6;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+.alert {
+	margin-bottom: 0px;
+}
+
+.container-session{
+	height: 100vh;
+	background-position: top center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url(hero-unit-bg.png);
+	width: 100%;
+}
+
+.authform{
+	margin-top: 12%;
+	padding: 20px;
+  	background: rgba(77, 77, 77, 0.3);
+  	border-radius: 5px;
+	width: 30%;
+}
+
+.form-control {
+  margin-top: 10px;
+}
+
+#form-user{
+	margin-top: 0px !important;
+}
+
+#form-pass{
+	margin-top: 0px !important;
+}		
+
+
+/*navbar top <---- CUALQUIER MODIFICACION A LOS ITEMS DE LA BARRA */
+
+#front-navbar {
+padding-left: 20px;
+padding-right: 20px;
+	.current{
+		a{
+			color: #fbc306 !important;
+		}
+	}
+
+
+	ul{
+		float: right;
+	}
+
+	li{
+
+		a:hover {
+			color: #fbc306;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+    		transition: 0.5s;
+		}
+
+		a{
+			color: #484848;
+		}
+	}
+}
+
+/*navbar top*/
+
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.container_global{	
+		#front-navbar2 {
+			ul{
+				float: center;
+			}
+		}
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.container_global{	
+		#front-navbar2 {
+			ul{
+				float: center;
+			}
+		}
+	}
+}

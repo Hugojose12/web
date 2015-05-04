@@ -1,0 +1,37 @@
+.container_global
+	%nav.navbar.navbar-default#front-navbar.navbar-fixed-top
+		.navbar-header
+			%button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+				%span.sr-only Toggle navigation
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			= link_to main_app.root_path do
+				= image_tag "", width: "90px", style: "margin-top:10px; margin-bottom: 10px; margin-right:20px; padding-left: 10px;" , class: "pull-left"     
+		.collapse.navbar-collapse.pull-right.nav#front-navbar-2
+			%ul.nav.navbar-nav.top-nav
+				%li= link_to 'HOME', "#home", class:"li_color"
+				%li= link_to 'SERVICIOS', "#services", class:"li_color"
+				%li= link_to 'NOSOTROS', "#nosotros", class:"li_color"
+				%li= link_to 'TEAM', "#about", class:"li_color"
+				%li= link_to 'CONTACTO', "#contacts", class:"li_color"
+
+	.container_text
+		.col-lg-6
+			.responsive-container.hidden-xs
+				.centered
+					%h3
+						HOLA
+				.titles.hidden-xs
+					%ul.scrollable
+						%li#text-1
+							HOY ES EL DIA EN QUE TUS IDEAS SE VUELVAN REALIDAD
+						%li#text-2
+							EXPANDE TU EMPRESA O MARCA EN INTERNET
+						%li#text-3
+							LAS ULTIMAS TECNOLOGIAS EN DISEÑO WEB
+			%center
+				%a.btn.btn-primary{:href => "#"} Leer mas
+
+		.col-lg-6
+			= image_tag "mobile2.png", class:"image_home", id:"image_home"
