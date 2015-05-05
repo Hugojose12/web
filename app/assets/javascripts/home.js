@@ -3,7 +3,9 @@ $(document).on('ready page:load', function(arguments){
 	var text1 = '<li id="text-1">HOY ES EL DIA EN QUE TUS IDEAS SE VUELVAN REALIDAD</li>'
 	var text2 = '<li id="text-2">EXPANDE TU EMPRESA O MARCA EN INTERNET</li>'
 	var text3 = '<li id="text-3">LAS ULTIMAS TECNOLOGIAS EN DISEÑO WEB</li>'
-	var array = [text1, text2, text3]
+	var text4 = '<li id="text-4">CONSULTORIAS PROFESIONALES EN SERVICIOS WEB</li>'
+
+	var array = [text1, text2, text3, text4]
 
 	$(function scrollable () {
 		$("#text-"+i).animate({
@@ -12,7 +14,7 @@ $(document).on('ready page:load', function(arguments){
 			$("#text-"+i).remove();
 			$(".scrollable").append(array[i-1])
 			i++;
-			if(i>3) i=1;
+			if(i>4) i=1;
 		});
 		setTimeout(scrollable, 5000);
 	});

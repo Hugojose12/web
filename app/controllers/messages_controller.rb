@@ -31,6 +31,8 @@ class MessagesController < ApplicationController
         flash[:success] = message_params[:name] +' , ¡Tu mensaje ha sido enviado!'
         format.html { redirect_to root_path :anchor => "new_message"}
         format.json { render :show, status: :created, location: @message }
+        UserMailer.welcome_email(@message).deliver
+
       else
         flash[:danger] = "¡Por favor intente de nuevo!"
         format.html { redirect_to root_path :anchor => "new_message"}
@@ -73,4 +75,5 @@ class MessagesController < ApplicationController
     def message_params
       params.require(:message).permit(:name, :email, :issue, :body)
     end
+
 end

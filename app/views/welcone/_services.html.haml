@@ -2,12 +2,21 @@
 	.row{style:"width:100%; padding:0px 50px 0px 50px;"}
 		.col-lg-6
 			%center
-				= image_tag "feature-bootstrap.png", class:"image_boostrap", id:"boostrap", width:"85%"
+				#carousel-example-generic.carousel-services.slide.image_boostrap#boostrap{"data-ride" => "carousel"}
+					.carousel-inner{:role => "listbox"}
+						.item.active
+							%img{src: "assets/web1.png"}
+						.item
+							%img{src: "assets/web2.png"}
+						.item
+							%img{src: "assets/web3.png"}
+						.item
+							%img{src: "assets/web4.png"}
 		.col-lg-6
 			%h3.services_text
 				BASADOS EN BOOTSTRAP
 			%p.services_p
-				Tras los últimos estándar de front-end y tendencia IU. Bootstrap es una herramienta muy potente que nos proporciona un conjunto de características avanzadas para una mayor personalización o desarrollo futuro.
+				Tras los últimos estándar de front-end y tendencia IU. Bootstrap es una herramienta muy potente que nos proporciona un conjunto de características avanzadas para una mayor personalización y desarrollo de interfaces amigables con el usuario.
 		.col-lg-12{style:"margin-top: 40px;"}
 			%hr
 
@@ -41,7 +50,7 @@
 			%i.fa.fa-search-plus
 			%p.text-icon Pensando siempre en el SEO 
 			%p.services_p
-				Escala en todos los motores de busqueda, encontrar tu sitio nunca a sido tan facil.
+				Escalar en todos los motores de busqueda, encontrar tu sitio nunca a sido tan facil.
 
 
 
@@ -89,3 +98,8 @@
 				%span.glyphicon.glyphicon-chevron-left{ style: "left: 40px;" }
 			%a.carousel-control.right{"data-slide" => "next", href: "#myCarousel2", style:"background:none; color:blue;" } 
 				%span.glyphicon.glyphicon-chevron-right{ style: "right: 40px;" }
+
+:javascript
+	$('.carousel-services').carousel({
+	interval: 2000
+	})

@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %center
+      %h1= "Mensaje Recibido de #{@message.name}"
+    %p
+      %strong Nombre del cliente:
+      = @message[:name]
+    %p
+      %strong Email del cliente:
+      = @message[:email]
+    %p
+      %strong Asunto:
+      = @message[:issue]
+    %p
+      %strong Mensaje:
+      = @message[:body]

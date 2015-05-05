@@ -295,6 +295,8 @@
 		    overflow: hidden;
 		    text-align:center; /* Align center inline elements */
 		    -webkit-animation: titles 2s;
+		    -moz-animation: titles 2s;
+		    -o-animation: titles 2s;
 	    	animation: titles 2s;
 		}
 
@@ -361,15 +363,15 @@
   		padding-top: 4px;
 		}
 	}
-	.image_home{
+	.image_home{	
 		-webkit-animation: opacidad 2s;
 		-moz-animation: opacidad 2s;
 		-o-animation: opacidad 2s;
 		animation: opacidad 2s;
 		opacity: 1;
 		width: 800px;
-		top: -42px;
-		left: -120px;
+		top: -52px;
+		left: -100px;
 		position: relative;
 	}
 }
@@ -700,7 +702,7 @@
 			margin-right: 10px;
 			color: #fff;
 			padding: 5px;
-			background: #E23535;
+			background: #517fa4;
 			border-radius: 4px;						
 		}
 
@@ -732,6 +734,8 @@
 	}
 }
 
+/* SECCION NOSOTROS */
+
 .page-section{
 	padding-top: 105px;
 	padding-right: 110px;
@@ -739,8 +743,9 @@
 	.container-section{
 		.container-col{
 			.service-icon{
-
 				overflow: hidden;
+
+				left: 0px;
 				color: #333333;
 				background-color: #ecf0f1;
 
@@ -754,11 +759,25 @@
 					height: auto;
 				}
 			}
+		.mover{
+			position: relative;
+			left: -450px;
+		}
+
+		.mover2{
+			position: relative;
+			left: -450px;
+		}
+
 
 
 		.service-icon:hover{
 			border: 6px solid #ecf0f1;
 			background: rgba(8, 180, 218, 0.84);
+			-webkit-transition: all .3s ease;
+		  	-moz-transition: all .3s ease;
+		  	-ms-transition: all .3s ease;
+		  	-o-transition: all .3s ease;
 
 			i{
 				-webkit-animation: hover 0.3s;
@@ -783,21 +802,31 @@
 				line-height: 1.7em;
 				font-size: 16.5px;
 			}
-		}
-		.container-icon{
-			overflow: hidden;
-			color: #333333;
-			background-color: #ecf0f1;
-				i{
-					position: relative;
-					font-size: 8em;
-					display: block;
-					text-align: center;
-					line-height: 180px;
-					width: auto;
-					height: auto;
-				}
 
+			.text-icon{
+				opacity: 0;
+			}
+		}
+	.container-icon-global{
+		overflow: hidden;
+			.container-icon{
+				
+				color: #333333;
+				background-color: #ecf0f1;
+					i{
+						position: relative;
+						font-size: 8em;
+						display: block;
+						text-align: center;
+						line-height: 180px;
+						width: auto;
+						height: auto;
+					}
+				}
+			.mover3{
+			position: relative;
+			right: -450px;
+		}
 			}
 
 		.container-icon:hover{
@@ -819,6 +848,10 @@
 				color: #006dcc;
 				font-size: 17.5px;
 				font-family: 'Open Sans', sans-serif;
+				-webkit-transition: all .3 ease;
+			  	-moz-transition: all .3s ease;
+			  	-ms-transition: all .3s ease;
+			  	-o-transition: all .3s ease;
 			}
 
 			p{
@@ -828,6 +861,10 @@
 				line-height: 1.7em;
 				font-size: 16.5px;
 			}
+
+			.text-icon{
+				opacity: 0;
+			}
 		}
 	}
 }
@@ -836,6 +873,7 @@
 		padding-right: 110px;
 		padding-left: 110px;
 		.container-section2{
+			overflow: hidden;
 			.section-title{
 				border-bottom: 1px solid #ecf0f1;
 				margin-bottom: 20px;
@@ -895,6 +933,26 @@
 				}
 			}
 
+			.mover4{
+				position: relative;
+				bottom: -600px;
+			}
+
+			.mover5{
+				position: relative;
+				bottom: -600px;
+			}
+
+			.mover6{
+				position: relative;
+				bottom: -600px;
+			}
+
+			.mover7{
+				position: relative;
+				bottom: -600px;
+			}
+
 			.icon:hover{
 				i{
 					-webkit-animation: hover-dos 1s infinite linear;
@@ -904,10 +962,73 @@
 				}
 			}
 		}
+
+
 	}
 
-	
-		
+/* PORTAFOLIO */
+
+	.container-port{
+		padding: 0px 100px 70px 100px;
+
+		.title-port{
+			margin-top: 35px;
+			margin-bottom: 70px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+			color: #319ac6
+		}
+
+		.image-prof{
+			overflow: hidden;
+			width: 108.44%;
+			height: 210px;
+			background-image: url(botones.png);
+			background-repeat: no-repeat;
+  			background-size: 100% 100%	;
+
+
+  			.mask{
+  			position: relative;
+			top: -100%;
+			width: 100.5%;
+			height: 100%;
+			background-color: rgba(97,97,97,0.5);
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			transition: all .3s ease;
+
+				i{
+					padding: 8px;
+					margin-top: 80px;
+					background: #319ac6;
+					border-radius: 50%;	
+					color: white;
+					font-size: 3em;
+				}
+  			}
+		}
+
+		#img-2{
+			background-image: url(aves.png);
+		}
+
+		.image-prof:hover{
+				-webkit-transform: scale(1.1) rotate(4deg);
+				-moz-transform: scale(1.1) rotate(4deg);
+				-o-transform: scale(1.1) rotate(4deg);
+				transform: scale(1.1) rotate(4deg);
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				-o-transition: all 0.3s;
+				transition: all 0.3s;
+			.mask{
+				top:0px;
+			}
+		}
+	}
 }
 
 /* Portrait tablets and medium desktops */

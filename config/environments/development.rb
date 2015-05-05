@@ -30,15 +30,15 @@ Rails.application.configure do
   config.time_zone = "Caracas"
 
 
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: 'gmail.com',
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: 'hugo200440@gmail.com',
-    password: 'countercounter'
-  }
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'gmail.com',
+  user_name:            'hugo200440@gmail.com',
+  password:             'countercounter',
+  authentication:       'plain',
+  enable_starttls_auto: true  }
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
