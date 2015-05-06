@@ -1,5 +1,5 @@
 .container_global
-	%nav.navbar.navbar-default#front-navbar.navbar-fixed-top
+	%nav.navbar.navbar-default#front-navbar.navbar-fixed-top.hidden-xs
 		.navbar-header
 			%button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
 				%span.sr-only Toggle navigation
@@ -18,23 +18,24 @@
 				%li= link_to 'CONTACTO', "#contacts", class:"li_color"
 
 	.container_text
-		.col-lg-6
-			.responsive-container.hidden-xs
-				.centered
-					%h3
-						HOLA
-				.titles.hidden-xs
-					%ul.scrollable
-						%li#text-1
-							HOY ES EL DIA EN QUE TUS IDEAS SE VUELVAN REALIDAD
-						%li#text-2
-							EXPANDE TU EMPRESA O MARCA EN INTERNET
-						%li#text-3
-							LAS ULTIMAS TECNOLOGIAS EN DISEÑO WEB
-						%li#text-4
-							CONSULTORIAS PROFESIONALES EN SERVICIOS WEB
-			%center
-				%a.btn.btn-primary{:href => "#"} Leer mas
+		.row
+			.col-lg-6.col-md-6.col-sm-12.col-xs-12
+				.responsive-container
+					.centered
+						%h3
+							HOLA
+					.titles
+						%ul.scrollable
+							%li#text-1
+								HOY ES EL DIA EN QUE TUS IDEAS SE VUELVAN REALIDAD
+							%li#text-2
+								EXPANDE TU EMPRESA O MARCA EN INTERNET
+							%li#text-3
+								LAS ULTIMAS TECNOLOGIAS EN DISEÑO WEB
+							%li#text-4
+								CONSULTORIAS PROFESIONALES EN SERVICIOS WEB
+				%center
+					%a.btn.btn-primary{:href => "#"} Conocenos
 
-		.col-lg-6
-			= image_tag "mobile2.png", class:"image_home", id:"image_home"
+			.col-lg-6.col-md-6.col-sm-12.col-xs-12.img-responsive
+				= image_tag "mobile2.png", class:"image_home", id:"image_home"

@@ -1,6 +1,6 @@
 .container_services
-	.row{style:"width:100%; padding:0px 50px 0px 50px;"}
-		.col-lg-6
+	.row{style:"width:100%; padding:0px 0px 0px 0px; margin-top: 0px; margin-left: 0px;"}
+		.col-lg-6.col-md.6.col-sm-12.col-sx-12
 			%center
 				#carousel-example-generic.carousel-services.slide.image_boostrap#boostrap{"data-ride" => "carousel"}
 					.carousel-inner#carousel-services-boostrap{:role => "listbox"}
@@ -12,66 +12,66 @@
 							%img{src: "assets/web3.png"}
 						.item
 							%img{src: "assets/web4.png"}
-		.col-lg-6
+		.col-lg-6.col-md.6.col-sm-12.col-sx-12
 			%h3.services_text
 				BASADOS EN BOOTSTRAP
 			%p.services_p
 				Tras los últimos estándar de front-end y tendencia IU. Bootstrap es una herramienta muy potente que nos proporciona un conjunto de características avanzadas para una mayor personalización y desarrollo de interfaces amigables con el usuario.
-		.col-lg-12{style:"margin-top: 40px;"}
+		.col-lg-12.col-md-12.col-sm-12.col-sx-12-12{style:"margin-top: 40px;"}
 			%hr
 
-	.row{style:"width:100%; padding:30px 50px 0px 50px;"}
-		.col-lg-6
+	.row{style:"width:100%; padding: 0px 0px 0px 0px; margin-top: 0px; margin-left: 0px;"}
+		.col-lg-6.col-md.6.col-sm-12.col-sx-12
 			%h3.services_text
 				100% FULL RESPONSIVE
 			%p.services_p
 				Todas nuestras web se desarrollan pensando siempre en el futuro, por tal motivo, son compatibles con cualquier dispotivo movil o desktop desde iphone, android, tablet y computadoras de escritorio.
-		.col-lg-6
+		.col-lg-6.col-md.6.col-sm-12.col-sx-12
 			%center
 				= image_tag "feature-responsive.png", class:"image_boostrap2", id:"boostrap2", width:"85%"
 		.col-lg-12{style:"margin-top: 30px;"}
 			%hr
 
-	.row{style:"width:100%; padding:30px 50px 0px 50px;"}
-		.col-lg-6
+	.row{style:"width:100%; padding:30px 0px 0px 0px; margin-top: 0px; margin-left: 0px;"}
+		.col-lg-6.col-md.6.col-sm-12.col-sx-12
 			%center
-				= image_tag "inclined.png", class:"image_boostrap3", id:"boostrap3", width:"500px"
+				= image_tag "inclined.png", class:"image_boostrap3", id:"boostrap3"
 		.col-lg-6
-			%i.fa.fa-line-chart
+			%i.fa.fa-line-chart.posicion-icon
 			%p.text-icon Diseñando sitios escalables para tu empresa o negocio.
-			%p.services_p
+			%p.services_p#posicion-left
 				Pon en marcha tu negocio incrementando tu productividad, expandiendo tu empresa en internet.
 
-			%i.fa.fa-smile-o
+			%i.fa.fa-smile-o.posicion-icon
 			%p.text-icon Orientadas a los usuarios a travez de UX|UI 
-			%p.services_p
+			%p.services_p#posicion-left
 				Nuestras web siempre buscan el 100% de experiencia de usuario, desarrollando para personas y no para computadoras.
 				
-			%i.fa.fa-search-plus
+			%i.fa.fa-search-plus.posicion-icon
 			%p.text-icon Pensando siempre en el SEO 
-			%p.services_p
+			%p.services_p#posicion-left
 				Escalar en todos los motores de busqueda, encontrar tu sitio nunca a sido tan facil.
 
 
 
 		
-	.container-client
+	.container-client.hidden-sm.hidden-xs
 		#myCarousel2.carousel.slide		
 			.carousel-inner
 				.item.active											
-					.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.col-lg-3.col-md-3.col-sm-6.col-xs-4
 						%center 
 							.content-img-client
 								%img{src: "assets/github-logo.jpg", width: "180px;", height:"95px;"  }	
-					.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.col-lg-3.col-md-3.col-sm-6.col-xs-4
 						%center 
 							.content-img-client#cliente-img2
 								%img{src: "assets/nodejs.png", width: "160px", height:"95px;"  }
-					.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.col-lg-3.col-md-3.col-sm-6.col-xs-4
 						%center 
 							.content-img-client#cliente-img5
 								%img{src: "assets/Ruby-logo.png", width: "90px", height:"95px;"  }
-					.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.col-lg-3.col-md-3.col-sm-6.col-xs-4
 						%center 
 							.content-img-client#cliente-img
 								%img{src: "assets/Ruby_on_Rails_logo.png", width: "80px", height:"95px;"  }
@@ -98,6 +98,55 @@
 				%span.glyphicon.glyphicon-chevron-left{ style: "left: 40px;" }
 			%a.carousel-control.right{"data-slide" => "next", href: "#myCarousel2", style:"background:none; color:blue;" } 
 				%span.glyphicon.glyphicon-chevron-right{ style: "right: 40px;" }
+
+
+
+	.container-client.hidden-lg.hidden-md
+		#myCarousel3.carousel.slide		
+			.carousel-inner
+				.item.active											
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client
+								%img{src: "assets/github-logo.jpg", width: "180px;", height:"95px;"  }	
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client#cliente-img2
+								%img{src: "assets/nodejs.png", width: "110px", height:"95px;"  }
+				.item
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client#cliente-img5
+								%img{src: "assets/Ruby-logo.png", width: "90px", height:"95px;"  }
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client#cliente-img
+								%img{src: "assets/Ruby_on_Rails_logo.png", width: "80px", height:"95px;"  }
+				.item	
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client
+								%img{src: "assets/jQurery.gif", width: "90px", height:"95px;"  }
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client#cliente-img3
+								%img{src: "assets/heroku-Logo-1.jpg", width: "90px", height:"95px;"  }
+				.item
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client
+								%img{src: "assets/457px-RecaptchaLogo.svg_1.png", width: "100px", height:"95px;"  }
+					.col-lg-3.col-md-3.col-sm-6.col-xs-6
+						%center 
+							.content-img-client#cliente-img7
+								%img{src: "assets/icon-b3.png", width: "90px", height:"95px;"  }
+
+
+			%a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel3", style:"background:none; color:blue;" } 
+				%span.glyphicon.glyphicon-chevron-left
+			%a.carousel-control.right{"data-slide" => "next", href: "#myCarousel3", style:"background:none; color:blue;" } 
+				%span.glyphicon.glyphicon-chevron-right
+
 
 :javascript
 	$('.carousel-services').carousel({
