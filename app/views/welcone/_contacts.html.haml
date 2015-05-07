@@ -9,28 +9,28 @@
 
 	.form-inputs
 
-		.row{style:"width:100%"}
-			.col-lg-6
-				.col-lg-12
+		.row{style:"width:100%; margin-left: 0px; margin-right: 0px;"}
+			.col-lg-6.col-md-6.col-sm-12.col-xs-12{style:"padding-left: 0px; padding-right: 0px;"}
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					- flash.each do |key, value|
 						%div{:class => "alert alert-#{key}"}
 							%button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} &times;
 							= content_tag :div, value.to_s, :id => "flash_#{key}"
-				.col-lg-6
+				.col-lg-6.col-md-6.col-sm-12.col-xs-12
 					= f.input :name, label: false, input_html: { class: 'form-control input-contacts' ,placeholder: "Tu nombre"}
-				.col-lg-6
+				.col-lg-6.col-md-6.col-sm-12.col-xs-12
 					= f.input :email, as: :email, label: false, input_html: { class: 'form-control input-contacts' ,placeholder: "Correo elecronico"}			
-				.col-lg-12
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					= f.input :issue, label: false, input_html: { class: 'form-control input-contacts' ,placeholder: "Tu asunto"}
-				.col-lg-12
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					= f.input :body, label: false, input_html: { class: 'form-control input-contacts' ,placeholder: "Tu mensaje"}
 
 					= f.button :button do
 						%i.fa.fa-envelope.fa
 						Enviar
 
-			.col-lg-6
-				.col-lg-12
+			.col-lg-6.col-md-6.col-sm-12.col-xs-12{style:"padding-left: 0px; padding-right: 0px;"}
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					%p
 						Puedes comunicarte con nosotros de 9am a 6pm de lunes a sabados, tambien te invitamos a contactarnos por medio de un email o del formulario.
 

@@ -1,0 +1,259 @@
+@media (min-width: 1200px) {
+
+
+	.container_footer{
+		background: #302F31;
+		
+		.container_col{
+			padding-bottom: 15px;
+			color:#bbb8bf;
+
+			h4{
+				margin-top: 15px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 700;
+				color: #fff;
+
+			}
+
+			#face{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px 12px 5px 12px;
+				background: #2D57A5;
+				border-radius: 4px;
+			}
+
+			#face:hover{
+				top: -10px;
+			}
+
+			#twitter{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px;
+				background: #3DD7E5;
+				border-radius: 4px;
+			}
+
+			#twitter:hover{
+				top: -10px;
+			}
+
+			#email{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px;
+				background: #517fa4;
+				border-radius: 4px;						
+			}
+
+			#email:hover{
+				top: -10px;
+			}
+		}
+
+		.copyright{
+
+			background: white;
+			padding-top: 15px;
+			padding-bottom: 7.5px; 
+
+			#derechos{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				display: inline-block;
+			}
+
+			#link{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+			.container_footer{
+		background: #302F31;
+		
+		.container_col{
+			padding-bottom: 15px;
+			color:#bbb8bf;
+
+			h4{
+				margin-top: 15px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 700;
+				color: #fff;
+
+			}
+
+			#face{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px 12px 5px 12px;
+				background: #2D57A5;
+				border-radius: 4px;
+			}
+
+			#face:hover{
+				top: -10px;
+			}
+
+			#twitter{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px;
+				background: #3DD7E5;
+				border-radius: 4px;
+			}
+
+			#twitter:hover{
+				top: -10px;
+			}
+
+			#email{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px;
+				background: #517fa4;
+				border-radius: 4px;						
+			}
+
+			#email:hover{
+				top: -10px;
+			}
+		}
+
+		.copyright{
+
+			background: white;
+			padding-top: 15px;
+			padding-bottom: 7.5px; 
+
+			#derechos{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				display: inline-block;
+			}
+
+			#link{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				display: inline-block;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+		.container_footer{
+		background: #302F31;
+		
+		.container_col{
+			padding-bottom: 15px;
+			color:#bbb8bf;
+
+			h4{
+				margin-top: 15px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 700;
+				color: #fff;
+
+			}
+
+			#face{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px 12px 5px 12px;
+				background: #2D57A5;
+				border-radius: 4px;
+			}
+
+			#face:hover{
+				top: -10px;
+			}
+
+			#twitter{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px;
+				background: #3DD7E5;
+				border-radius: 4px;
+			}
+
+			#twitter:hover{
+				top: -10px;
+			}
+
+			#email{
+				position: relative;
+				font-size: 40px;
+				margin-right: 10px;
+				color: #fff;
+				padding: 5px;
+				background: #517fa4;
+				border-radius: 4px;						
+			}
+
+			#email:hover{
+				top: -10px;
+			}
+		}
+
+		.copyright{
+
+			background: white;
+			padding-top: 15px;
+			padding-bottom: 7.5px; 
+
+			#derechos{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				display: inline-block;
+			}
+
+			#link{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				display: inline-block;
+			}
+		}
+	}
+}

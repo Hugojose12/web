@@ -1,0 +1,102 @@
+@media (min-width: 1200px) {
+	.container-contacts{
+		padding-top: 25px;
+		p{
+			margin-bottom: 20px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 25px;
+			color: #319ac6;
+		}
+		.divisor{
+			border-bottom: 1px solid #319ac6;
+			width: 90%;
+			margin-bottom: 15px;
+		}
+	}
+
+	.form-inputs{
+		p{
+			font-family: 'Open Sans', sans-serif;
+			margin-top: 10px;
+			font-size: 17px;
+			color: white
+		}
+	}
+
+	#contacts{
+		background:#302F31;
+	}
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.container-contacts{
+		padding-top: 25px;
+		p{
+			margin-bottom: 20px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			color: #319ac6;
+		}
+		.divisor{
+			border-bottom: 1px solid #319ac6;
+			width: 90%;
+			margin-bottom: 15px;
+		}
+	}
+
+	.form-inputs{
+		p{
+			font-family: 'Open Sans', sans-serif;
+			margin-top: 10px;
+			font-size: 17px;
+			text-align: justify;
+			color: white
+		}
+	}
+
+	#contacts{
+		background:#302F31;
+	}
+}
+
+@media (max-width: 480px) {
+	.container-contacts{
+		padding-top: 25px;
+		p{
+			margin-bottom: 20px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			color: #319ac6;
+		}
+		.divisor{
+			border-bottom: 1px solid #319ac6;
+			width: 90%;
+			margin-bottom: 15px;
+		}
+	}
+
+	.form-inputs{
+		p{
+			font-family: 'Open Sans', sans-serif;
+			margin-top: 10px;
+			font-size: 17px;
+			text-align: justify;
+			color: white
+		}
+	}
+
+	#contacts{
+		background:#302F31;
+	}
+}
